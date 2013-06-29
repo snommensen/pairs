@@ -1,0 +1,13 @@
+<div class="hero-unit">
+    <h1>Team Members</h1>
+
+    <p>There are {{teamMembers.length}} people on your team:</p>
+    <ul>
+        <li ng-repeat="member in teamMembers">{{member}}</li>
+    </ul>
+    <div class="input-append">
+        <input class="span2" id="appendedInputButton" type="text" ng-model="member">
+        <button class="btn" type="button" ng-click="addMember(member)">Add</button>
+        <button class="btn" type="button" ng-click="removeMember(member)">Remove</button>
+    </div>
+</div>
